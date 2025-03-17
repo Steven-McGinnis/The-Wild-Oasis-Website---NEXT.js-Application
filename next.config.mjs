@@ -7,7 +7,12 @@ const nextConfig = {
         hostname: "chwqenkkimefffytqafr.supabase.co",
         port: "",
         pathname: "/storage/v1/object/public/cabin-images/**",
-        search: "",
+      },
+      {
+        protocol: "https",
+        hostname: "lh3.googleusercontent.com",
+        port: "",
+        pathname: "**", // or "/a/ACg8ocIB3dmF..." if you want to be specific
       },
     ],
   },

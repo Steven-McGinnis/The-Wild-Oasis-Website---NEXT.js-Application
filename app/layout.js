@@ -32,7 +32,6 @@ export default function RootLayout({ children }) {
         <Header />
 
         <div className="grid flex-1 px-8 py-12">
-          <Navigation />
           <main className="mx-auto w-full max-w-7xl">
             <ReservationProvider>{children}</ReservationProvider>
           </main>
