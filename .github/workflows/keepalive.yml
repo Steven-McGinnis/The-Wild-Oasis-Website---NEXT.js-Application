@@ -1,9 +1,9 @@
 name: Keep Supabase Alive
 
 on:
-  workflow_dispatch:  # 👈 allows manual triggering
+  workflow_dispatch: # Allows manual triggering of the workflow
   schedule:
-    - cron: '0 12 * * 0'  # every Sunday at noon UTC
+    - cron: '0 12 * * 0'  # Every Sunday at 12:00 UTC (adjust as needed)
 
 jobs:
   ping:
@@ -11,4 +11,4 @@ jobs:
     steps:
       - name: Call keepalive endpoint
         run: |
-          curl -X GET https://your-project.vercel.app/api/keepalive
+          curl -X GET https://the-wild-oasis-website-next-js-application.vercel.app/api/keepalive
