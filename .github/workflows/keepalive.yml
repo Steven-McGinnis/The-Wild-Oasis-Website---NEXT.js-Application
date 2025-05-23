@@ -3,7 +3,7 @@ name: Keep Supabase Alive
 on:
   workflow_dispatch: # Allows manual triggering of the workflow
   schedule:
-    - cron: '0 12 * * 0'  # Every Sunday at 12:00 UTC (adjust as needed)
+    - cron: '0 0 */3 * *'  # Every 3 days at 00:00 UTC
 
 jobs:
   ping:
