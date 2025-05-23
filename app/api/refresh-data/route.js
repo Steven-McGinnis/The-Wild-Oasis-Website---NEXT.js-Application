@@ -1,6 +1,6 @@
 import { isFuture, isPast, isToday } from "date-fns";
 import { subtractDates } from "@/app/_utils/helpers";
-import supabase from "@/app/_services/supabase";
+import { supabase } from "@/app/_lib/supabase";
 import { bookings } from "@/app/_data/data-bookings";
 import { cabins } from "@/app/_data/data-cabins";
 import { guests } from "@/app/_data/data-guests";
