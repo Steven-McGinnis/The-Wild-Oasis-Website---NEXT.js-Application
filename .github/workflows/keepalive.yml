@@ -1,0 +1,13 @@
+name: Keep Supabase Alive
+
+on:
+  schedule:
+    - cron: '0 12 * * 0'  # Every Sunday at 12:00 UTC (adjust as needed)
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Call keepalive endpoint
+        run: |
+          curl -X GET https://your-app.vercel.app/api/keepalive
