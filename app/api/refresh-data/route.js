@@ -1,9 +1,9 @@
 import { isFuture, isPast, isToday } from "date-fns";
 import { subtractDates } from "@/app/_lib/helpers"; // adjust path if needed
 import supabase from "@/app/_services/supabase";
-import { bookings } from "@/app/api/refresh-data/data-bookings";
-import { cabins } from "@/app/api/refresh-data/data-cabins";
-import { guests } from "@/app/api/refresh-data/data-guests";
+import { bookings } from "@/app/_data/data-bookings";
+import { cabins } from "@/app/_data/data-cabins";
+import { guests } from "@/app/_data/data-guests";
 
 // --- Delete functions ---
 async function deleteGuests() {
