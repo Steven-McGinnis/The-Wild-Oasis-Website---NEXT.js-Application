@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Call keepalive endpoint
         run: |
-          curl -X GET https://your-app.vercel.app/api/keepalive
+          curl -X GET https://the-wild-oasis-website-next-js-application.vercel.app/api/keepalive
