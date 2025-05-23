@@ -1,5 +1,5 @@
 import { isFuture, isPast, isToday } from "date-fns";
-import { subtractDates } from "@/app/_lib/helpers"; // adjust path if needed
+import { subtractDates } from "@/app/_utils/helpers";
 import supabase from "@/app/_services/supabase";
 import { bookings } from "@/app/_data/data-bookings";
 import { cabins } from "@/app/_data/data-cabins";
