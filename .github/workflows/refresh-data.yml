@@ -1,0 +1,14 @@
+name: Refresh Supabase Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 12 * * 0"
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - name: POST to refresh endpoint
+        run: |
+          curl -X POST https://the-wild-oasis-website-next-js-application.vercel.app/api/refresh-data
