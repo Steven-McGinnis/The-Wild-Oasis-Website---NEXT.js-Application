@@ -4,8 +4,6 @@ import { use } from "react";
 import { unstable_noStore as noStore } from "next/cache";
 
 export default function CabinList({ filter }) {
-  // noStore(); // Would make this dynamic with partial pre rendering because its wrapped in a Suspense
-
   const cabins = use(getCabins());
 
   if (!cabins.length) return null;
